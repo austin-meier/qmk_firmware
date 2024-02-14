@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | F12  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |      | ESC  |   +  |   #  |                    |   =  |   (  |   )  |   /  |  \   |      |
+ * |      |C+S+Q |      | ESC  |   +  |   ~  |                    |   =  |   (  |   )  |   /  |  \   |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |   !  |   @  |   #  |   $  |   %  |-------.    ,-------|  Up  | Down | Left |Right |   -  |      |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT(
   KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
-  _______, _______, _______, KC_ESC,  KC_PLUS, KC_HASH,                   KC_EQL,  KC_LPRN, KC_RPRN, KC_SLSH, KC_BSLS, _______,
+  _______,RCS(KC_Q), _______, KC_ESC,  KC_PLUS, KC_TILD,                   KC_EQL,  KC_LPRN, KC_RPRN, KC_SLSH, KC_BSLS, _______,
   _______, KC_EXLM, KC_AT,   KC_HASH,  KC_DLR, KC_PERC,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_MINS, XXXXXXX,
   _______, _______, _______, KC_AMPR, KC_LBRC, KC_RBRC, _______, _______, KC_UNDS, KC_LCBR, KC_RCBR, KC_PIPE, KC_RCBR, KC_PIPE,
                              _______, _______, _______, _______, _______,  _______, _______, _______
